@@ -6,12 +6,10 @@ export default function Header() {
     return (
         <>
             <Menu />
-            <h1>The Character Test</h1>
+            <h1 className='shrikhand-regular'>The Character Test</h1>
             <div>
                 <img src={witch} className="logo" alt="Vite logo" />
-
                 <img src={fairy} className="logo" alt="React logo" />
-
             </div>
       </>
     )

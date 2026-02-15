@@ -1,15 +1,15 @@
 import '../styles/home.css'
 import Header from '../components/Header'
 
-function Test() {
+function About() {
   return (
     <>
       <Header/>
       <div className="card">
-        <p>This is the TEST page.</p>
+        <p>This is the ABOUT page.</p>
       </div>
     </>
   )
 }
 
-export default Test
+export default About;

@@ -7,6 +7,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from 'react-router-dom';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 function Example() {
   const [show, setShow] = useState(false);
@@ -27,7 +29,7 @@ function Example() {
     <>
       <Container>
         <Row>
-          <Col md={{ span: 1, offset: 11 }} onClick={handleShow} className='clickable d-flex align-items-center gap-2'>
+          <Col xs='auto' onClick={handleShow} className='ms-auto clickable d-flex align-items-center gap-2'>
               Menu <VscMenu />
           </Col>
         </Row>
@@ -38,8 +40,11 @@ function Example() {
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className='clickable' onClick={() => goTo('/')}>Home</div>
-          <div className='clickable' onClick={() => goTo('/test')}>Test</div>
+          <ListGroup>
+            <ListGroup.Item className='clickable' onClick={() => goTo('/')}>Home</ListGroup.Item>
+            <ListGroup.Item className='clickable' onClick={() => goTo('/test')}>Take the Test</ListGroup.Item>
+            <ListGroup.Item className='clickable' onClick={() => goTo('/about')}>About</ListGroup.Item>
+          </ListGroup>
         </Offcanvas.Body>
       </Offcanvas>
     </>

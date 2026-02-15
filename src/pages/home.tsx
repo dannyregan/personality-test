@@ -12,7 +12,7 @@ function Home() {
         <div className="card">
           <p>Blurb about the test.</p>
         </div>
-        <nav>
+        <nav className='padding'>
           <Link to='/test'>
             <Button variant='light'>Take the test</Button>
           </Link>
