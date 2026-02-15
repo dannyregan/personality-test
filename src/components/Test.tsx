@@ -564,10 +564,11 @@ export default function Test() {
         </Card>
       ))}
 
-      <div className="text-center">
+      <div className="text-center mb-4">
         <Button 
           disabled={!isComplete} 
           onClick={calculateResults}
+          size="lg"
         >
           See Results
         </Button>
