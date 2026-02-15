@@ -11,7 +11,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
     return (
-        <Container className='bottom-of-page py-3'>
+        <Container className='py-3'>
           <Row className='justify-content-center gap-5 padding'>
             <Col xs='auto' className='clickable d-flex align-items-center gap-2'><SiGmail /> email@email.com</Col>
             <Col xs='auto' className='clickable d-flex align-items-center gap-2'><SlSocialInstagram /> TheCharacterTest</Col>

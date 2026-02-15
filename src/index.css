@@ -6,7 +6,8 @@
   font-style: normal;
 }
 
-.clickable:hover {
+.clickable:hover,
+.clickable:hover * {
   cursor: pointer;
 }
 
