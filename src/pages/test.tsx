@@ -1,15 +1,12 @@
 import '../styles/home.css'
-import Header from '../components/Header'
+import Test from '../components/Test'
 
-function Test() {
+function TestPage() {
   return (
     <>
-      <Header/>
-      <div className="card">
-        <p>This is the TEST page.</p>
-      </div>
+      <Test />
     </>
   )
 }
 
-export default Test
+export default TestPage

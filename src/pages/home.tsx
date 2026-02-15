@@ -8,7 +8,6 @@ function Home() {
 
   return (
     <>
-        <Header/>
         <div className="card">
           <p>Blurb about the test.</p>
         </div>
